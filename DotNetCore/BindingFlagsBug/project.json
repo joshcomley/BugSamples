@@ -1,26 +1,22 @@
-{
-    "version": "1.0.0-*",
-    "compilationOptions": {
-        "emitEntryPoint": true
-    },
-
-    "dependencies": {
-        "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-*"
-    },
-
-    "tools": {
-      "dotnet-ef": "1.0.0-*"
-    },
-    
-    "frameworks": {
-      "netstandardapp1.5": {
-        "dependencies": {
-          "NETStandard.Library": "1.0.0-*"
+    {
+        "version": "1.0.0-*",
+        "compilationOptions": {
+            "emitEntryPoint": true
         },
-        "imports": [
-          "dnxcore50",
-          "portable-net451+win8"
-        ]
+
+        "dependencies": {
+            "Microsoft.NETCore.Platforms": "1.0.1-rc2-23826"
+        },
+
+      "frameworks": {
+        "netstandardapp1.5": {
+          "dependencies": {
+            "NETStandard.Library": "1.0.0-rc2-23826"
+          },
+          "imports": [
+            "dnxcore50",
+            "portable-net451+win8"
+          ]
+        }
       }
     }
-}
